@@ -16,4 +16,12 @@ __author__ = 'Brian Rieder'
 #
 # Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
 
-print('Trying to test git')
+
+def sum_proper_divisors(num):
+    test_val = 1
+    sum = 0
+    while test_val <= (num/2):
+        if num % test_val == 0:
+            sum += test_val
+        test_val += 1
+    return sum

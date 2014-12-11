@@ -29,6 +29,6 @@ while fib_val < 4000000:
     if fib_val % 2 == 0:
         sum_val += fib_val
     itr += 1
-    
+
 
 print sum_val

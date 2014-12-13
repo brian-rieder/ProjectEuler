@@ -31,4 +31,4 @@ while fib_val < 4000000:
     itr += 1
 
 
-print sum_val
+print(sum_val)

@@ -15,11 +15,11 @@ while True:
         if num % 3 == 0:
             if num % 5 == 0:
                 if num % 7 == 0:
-                    print num
+                    print(num)
                     if num % 11 == 0:
                         if num % 13 == 0:
                             if num % 17 == 0:
                                 if num % 19 == 0:
-                                    print num
+                                    print(num)
                                     break
     num += 20

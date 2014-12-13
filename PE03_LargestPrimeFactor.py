@@ -19,7 +19,7 @@ def is_prime(n):
     if n % 2 == 0:
         return 0
     max_val = int(sqrt(n)) + 1
-    for i in xrange(3, max_val, 2):
+    for i in range(3, max_val, 2):
         if n % i == 0:
             return 0
     return 1
@@ -31,4 +31,4 @@ while True:
     if (start_val % check_factor == 0) and (is_prime(check_factor)):
         break
     check_factor -= 1
-print check_factor
+print(check_factor)

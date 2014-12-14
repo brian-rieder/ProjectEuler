@@ -9,17 +9,16 @@ __author__ = 'Brian Rieder'
 
 # Answer: 232792560
 
-num = 20
-while True:
-    if num % 2 == 0:
-        if num % 3 == 0:
-            if num % 5 == 0:
-                if num % 7 == 0:
-                    print(num)
-                    if num % 11 == 0:
-                        if num % 13 == 0:
-                            if num % 17 == 0:
-                                if num % 19 == 0:
-                                    print(num)
-                                    break
-    num += 20
+
+check = False
+i = 2520
+while not check:
+    i += 2520
+    check_div = True
+    for j in range(11, 20):
+        if i % j != 0:
+            check_div = False
+            break
+    if check_div:
+        check = True
+print(i)

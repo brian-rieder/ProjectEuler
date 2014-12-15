@@ -7,3 +7,13 @@ __author__ = 'Brian Rieder'
 # What is the sum of the digits of the number 2^1000?
 
 # Answer: 1366
+
+check = 1000
+
+
+def sum_digits(num):
+    list_pow = list(str(2**num))
+    sum_val = sum(int(i) for i in list_pow)
+    return sum_val
+
+print(sum_digits(check))

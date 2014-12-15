@@ -7,3 +7,26 @@ __author__ = 'Brian Rieder'
 # What is the 10 001st prime number?
 
 # Answer: 104743
+
+count = 6
+prime_check = 15
+
+
+def is_prime(num):
+    if num == 1:
+        return False
+    if num == 2:
+        return True
+    if num % 2 == 0:
+        return False
+    for i in range(3, int(num**.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+while count != 10001:
+    prime_check += 2
+    if is_prime(prime_check):
+        count += 1
+
+print(prime_check)
